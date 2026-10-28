@@ -1,5 +1,6 @@
 """Exercise the running API over real HTTP, including a rejected request."""
 import json
+import http.client
 import sys
 import time
 import urllib.error
@@ -11,7 +12,7 @@ for attempt in range(60):
         with urllib.request.urlopen(base + "/health", timeout=2) as response:
             health = json.load(response)
         break
-    except (urllib.error.URLError, TimeoutError):
+    except (urllib.error.URLError, OSError, http.client.HTTPException):
         time.sleep(1)
 else:
     raise RuntimeError("API did not become healthy")
