@@ -6,7 +6,8 @@ Predict three Iris flower species from sepal length, sepal width, petal length a
 
 ## Dataset and results
 
-- Source: [Kaggle UCI Iris](https://www.kaggle.com/datasets/uciml/iris).
+- **Exact Kaggle dataset:** [Iris Species — UCI Machine Learning (`uciml/iris`)](https://www.kaggle.com/datasets/uciml/iris).
+- **Dataset uploaded in this repository:** [data/Iris.csv](data/Iris.csv). See [dataset source and column details](data/README.md).
 - Download: `https://www.kaggle.com/api/v1/datasets/download/uciml/iris`.
 - 150 rows, 4 measurements, 3 balanced classes. The identifier is excluded.
 - Stratified split: 120 training rows, 30 held-out test rows, random seed 42.
