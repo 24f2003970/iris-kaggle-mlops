@@ -1,5 +1,7 @@
 # Kaggle Iris classification — complete MLOps case study
 
+[![CI](https://github.com/24f2003970/iris-kaggle-mlops/actions/workflows/ci.yml/badge.svg)](https://github.com/24f2003970/iris-kaggle-mlops/actions/workflows/ci.yml)
+
 Predict three Iris flower species from sepal length, sepal width, petal length and petal width (centimetres). The model is a random forest trained in an executed Jupyter notebook on the actual Kaggle CSV.
 
 ## Dataset and results
